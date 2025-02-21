@@ -1,4 +1,3 @@
-//server.js
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -33,9 +32,9 @@ app.post('/bfhl', (req, res) => {
 
     return res.json({
       is_success: true,
-      user_id: "your_name_ddmmyyyy", // Replace with your details
-      email: "your.email@college.com", // Replace with your details
-      roll_number: "your_roll_number", // Replace with your details
+      user_id: "anandita_agarwal_21022025", // Replace with your details
+      email: "anandita0005.be21@chitkara.edu.in", // Replace with your details
+      roll_number: "2110990005", // Replace with your details
       numbers,
       alphabets,
       highest_alphabet
@@ -52,3 +51,13 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// .gitignore
+node_modules/
+.env
+.DS_Store
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.vscode/
+.idea/
